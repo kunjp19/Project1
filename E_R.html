@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Project 1 turotial</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+<input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='index.html'" value='Home'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Intro.html'" value='Introduction'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Related_work.html'" value='Related work'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Architectures.html'" value='Architecture'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='E_R.html'" value='Experiments and Results'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Reference.html'" value='Reference'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Quiz.html'" value='Quiz'>
+      </div>
+  </div>
+
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="Exp">
+      <h3 class="w3-wide w3-center">Experiments and Results</h3>
+      <p class="w3-justify">The Experiment is conducted using shanghai Tech dataset(v11) which contain 474 videos from
+        215 different crowded scenes. The size of the video is 360×640 pixels. 80% of the data is used for training,
+        and 20% of the data is used for testing and validation. Since we it was doing classfication,Each video is classified
+        as either low, medium or high-density class. Each video is divided into the number of video frames,did data labeling
+        store the details in a CSV file. Later this  CSV file used as data and helps the system to identify the frame sequence
+        extracted from the same video. 477463 frames are created for the training dataset, and 13395 frames are created for the
+        test data, and these frames are used for the crowd density estimation.</p>
+      <h3>Results</h3>
+      <p>Experiment results provide around 75% accuracy for CNN and 98% accuracy for CNN(LSTM) model.<p>
+        <img src="modelacc.jpg" style="width:50%,float:left"><h3>CNN accuracy</h3>
+        <img src="modelaccLSTM.jpg" style="width:50%, float: right"><h3>CNN(LSTM) accuracy</h3>
+    </div>
+  </div>
+</html>

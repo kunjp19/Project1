@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Project 1 turotial</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='index.html'" value='Home'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Intro.html'" value='Introduction'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Related_work.html'" value='Related work'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Architectures.html'" value='Architecture'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='E_R.html'" value='Experiments and Results'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Reference.html'" value='Reference'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Quiz.html'" value='Quiz'>
+      </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h3><b>Related Work</b></h3>
+        <h4>Crowd Image Classification Using TensorFlow classification model</h4>
+        <p class="w3-justify">Based on my research We can use pre-trained convolution neural network and long short-term memory network to estimate the crowd
+           density from the any kind of data. CNN and LSTM network are two sorts of the neural network framework.Tensorflow hosted different kind of
+           classification models with differnet size of data inputs.
+           <img src="Crowd_Classification.jpg" style="width:100%">
+         </p>
+        <h4>Transfer learning techniques for retraining.</h4>
+        <p class="w3-justify">There are some standard pre-trained classification models available. So we don’t need to
+          create our model from scratch. we can use that model by changing the output layer.
+          Pre-trained model which usually contains two parts the first part is used for feature
+          extraction and the second part is used for classification tasks, which contains a fully connected layer and
+          a softmax layer at the end.we need to reuse the feature extraction part and need to retrain the classification part. Usually, in convolution neural networks, every output
+          channel is connected to every input channel densely. By conducting repeated forward and backword propogation(epochs) we will
+          get better accuracy.
+        </p>
+        <h4>Dataset Collection</h4>
+        <ui><li>Creating a iamge dataset for three classes(High, Low, Mid) for classification from scratch.</li>
+	         <li>Retrain pre-existing classification model(s) with our own dataset of crowd images.</li>
+           <li>There are other datasets are available in the form of videos and labes.</li>
+           <li>For these problem statement we need the data in the from of images and every images should be in RGB form.</li>
+        </ui>
+
+        <h4>Successes</h4>
+        <p>Lots of image data available on the web.</p>
+        <p>Find lots of articals and online tutorials which helps us to understand complex deep learning models
+          architectures.</p>
+
+        <h4>Failures</h4>
+        <p>Trouble counting people in large crowds due to more occlusion and overlapping people.</p>
+        <p>If the density of the crowd exceeds that predefined limit, some congestion may occur in that scene.
+          So in that case model can not able to pridict accurately. </p>
+
+        <h4>Challenges:</h4>
+        <p>Not able to decide the range of each class like How many people could be a low-density crowd? Medium-density? High density?
+        Detecting and classifying large crowds can be difficult.</p>
+        <p>Hard to decide which pre-trained model will be going to used and what could be the input data size.</p>
+
+  </div>
+</html>

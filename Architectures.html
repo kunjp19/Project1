@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Project 1 turotial</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+<input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='index.html'" value='Home'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Intro.html'" value='Introduction'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Related_work.html'" value='Related work'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Architectures.html'" value='Architecture'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='E_R.html'" value='Experiments and Results'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Reference.html'" value='Reference'>
+      <input class="w3-bar-item w3-button w3-padding-large w3-hide-small" type=button onClick="location.href='Quiz.html'" value='Quiz'>
+      </div>
+  </div>
+
+
+  <!-- The Architectures Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Architecture">
+    <h3>Important Architectures</h3>
+    <h4>What is Neural Network?<h4>
+      <p class="w3-justify"> Neural networks are complex models, which try to mimic the way the human brain develops
+        classification rules. A neural net consists of many different layers of neurons, with each layer receiving
+        inputs from previous layers, and passing outputs to further layers.</p>
+        <img src="classification_of_neural_networks.jpg" style="width:100%"><br/></br></br>
+    <h4>Convolution Neural Network (CNN)</h4>
+    <p class="w3-justify">a convolutional neural network (CNN) is a class of deep neural networks, most commonly applied to
+      analyzing visual imagery means Whenever the inputs or data are in the form of images or video frames at that time we should
+      prefer a convolution neural network. With the help of CNN, we are able to do the following things like:</p>
+      <ui><li>Image classification</li>
+          <li>Object Classification</li>
+          <li>Object Deteaction</li>
+          <li>Face Classification</li>
+      </ui>
+    <img src="Cnn.jpg" style="width:100%"><br/>
+    <h4>Recurrent Neural Network (RNN)</h4>
+    <p class="w3-justify">Recurrent Neural Network is a speculation of feedforward neural network that has an some
+      inbuilt memory to store. RNN is intermittent in nature becouse output of the current data tottaly depend on
+      input. After delivering the outout, it is replicated and sent once again into the recurrent neural network.RNN
+      works very well with the sequence of data.These type of architectures are good at:<br/>
+    </p>
+    <ui><li>Speech Recognition</li>
+    <li>Timeseries data</li>
+  <li>Sales/Stock forcasting</li></ui><br/><br/>
+
+    <h4>Long Short Term Memory(LSTM)</h4>
+    <p class="w3-justify">Long Short-Term Memory (LSTM) is technique how to remember past data in memory.These type of
+      networks are a modified version of recurrent neural networks. The <a href='https://ieeexplore-ieee-org.proxylib.csueastbay.edu/document/8704051'><b>vanishing gradient problem(Visit here from more details)</b></a> of RNN is resolved here.LSTM is well-suited to classify, process
+      and predict time series given time lags of unknown duration. It trains the model by using back-propagation.</p>
+      <img src="LSTM.jpg" style="width:100%"><br/></br></br>
+  </div>
+</html>
